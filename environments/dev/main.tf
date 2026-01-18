@@ -45,3 +45,14 @@ module "data" {
   sql_admin_username = "sqladminuser"
 }
 
+module "bastion" {
+  source = "../../modules/bastion"
+
+  project_name        = var.project_name
+  location            = var.location
+  environment         = var.environment
+  resource_group_name = module.network.resource_group_name
+
+  bastion_subnet_id = module.network.bastion_subnet_id
+}
+
