@@ -56,3 +56,16 @@ module "bastion" {
   bastion_subnet_id = module.network.bastion_subnet_id
 }
 
+module "monitoring" {
+  source = "../../modules/monitoring"
+
+  project_name        = var.project_name
+  location            = var.location
+  environment         = var.environment
+  resource_group_name = module.network.resource_group_name
+
+  web_vm_id     = module.compute.web_vm_id
+  app_vm_id     = module.compute.app_vm_id
+  sql_server_id = module.data.sql_server_id
+}
+
