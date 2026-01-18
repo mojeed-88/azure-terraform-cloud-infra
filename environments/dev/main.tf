@@ -34,3 +34,14 @@ module "compute" {
   ssh_public_key = file("~/.ssh/id_rsa.pub")
 }
 
+module "data" {
+  source = "../../modules/data"
+
+  project_name        = var.project_name
+  location            = var.location
+  environment         = var.environment
+  resource_group_name = module.network.resource_group_name
+
+  sql_admin_username = "sqladminuser"
+}
+
