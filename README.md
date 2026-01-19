@@ -52,30 +52,27 @@ This project deploys a secure, enterprise-style Azure environment:
 
 All infrastructure is deployed using reusable Terraform modules.
 
----
 
 ## Repository structure
 
 ```
 azure-terraform-cloud-infra/
 │
-├── backend/ # Remote state backend configuration
+├── backend/                     # Remote state backend configuration
 ├── environments/
-│ └── dev/ # Development environment (root module)
+│   └── dev/                     # Development environment (root module)
 ├── modules/
-│ ├── network/ # VNet, subnets, routing
-│ ├── security/ # NSGs and security rules
-│ ├── compute/ # Linux VMs and NICs
-│ ├── data/ # Azure SQL and data services
-│ ├── bastion/ # Secure access layer
-│ └── monitoring/ # Log Analytics and alerts
-│
-└── docs/
-└── architecture.png
+│   ├── network/                 # VNet, subnets, routing
+│   ├── security/                # NSGs and security rules
+│   ├── compute/                 # Linux VMs and NICs
+│   ├── data/                    # Azure SQL and data services
+│   ├── bastion/                 # Secure access layer
+│   └── monitoring/              # Log Analytics and alerts
+├── docs/
+│   └── architecture.png
+└── README.md
 
 
-
----
 
 ## Technologies used
 
