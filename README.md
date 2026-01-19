@@ -8,6 +8,14 @@ Production-style Azure infrastructure deployed using Terraform, featuring secure
 
 ![Architecture Diagram](docs/architecture.png)
 
+
+## Terraform Project Structure (VS Code)
+
+The screenshot below shows the modular Terraform repository structure
+used to provision Azure infrastructure following best practices.
+
+![Terraform Project Structure](docs/vscode-terraform-structure.png)
+
 ---
 
 ## Key features
