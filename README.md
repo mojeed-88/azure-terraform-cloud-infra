@@ -56,7 +56,7 @@ All infrastructure is deployed using reusable Terraform modules.
 
 ## Repository structure
 
-
+```
 azure-terraform-cloud-infra/
 │
 ├── backend/ # Remote state backend configuration
