@@ -1,4 +1,4 @@
-# Azure Enterprise Cloud Infrastructure with Terraform
+# Azure Enterprise Cloud Infrastructure – Terraform Reference Architecture
 
 Production-style Azure infrastructure deployed using Terraform, featuring secure networking, multi-tier architecture, secret management, monitoring, and remote state management.
 
